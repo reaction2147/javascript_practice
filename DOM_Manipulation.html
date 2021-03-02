@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- The DOM -->
+<!-- your html file: -->
+<body>
+    <h1>
+      THE TITLE OF YOUR WEBPAGE
+    </h1>
+    <div id="container"></div>
+  </body>
+
+  <script>
+// your javascript file
+const container = document.querySelector('#container');
+
+const content = document.createElement('div');
+content.classList.add('content');
+content.textContent = 'This is the glorious text-content!';
+const p = document.createElement('div');
+content.classList.add('content');
+content.textContent = 'Hi i\'m red';
+p.style.color ="red";
+
+
+container.appendChild(content);
+
+  </script>
+</html>

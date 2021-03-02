@@ -14,7 +14,12 @@
     </h1>
     <div id="container"></div>
   </body>
-
+<!-- the html file -->
+<div id="container">
+  <button id="1">Click Me</button>
+  <button id="2">Click Me</button>
+  <button id="3">Click Me</button>
+</div>
   <script>
 // your javascript file
 const container = document.querySelector('#container');
@@ -22,13 +27,42 @@ const container = document.querySelector('#container');
 const content = document.createElement('div');
 content.classList.add('content');
 content.textContent = 'This is the glorious text-content!';
-const p = document.createElement('div');
-content.classList.add('content');
-content.textContent = 'Hi i\'m red';
-p.style.color ="red";
 
+let p = document.createElement("p");
+p.textContent = 'Hi i\'m red';
+content.appendChild(p);
+p.style.color = 'red';
+
+let h3 = document.createElement("h3");
+h3.textContent = 'I\'m a blue h3!';
+content.appendChild(h3);
+h3.style.color ='blue';
+
+const newContent = document.createElement('div');
+newContent.classList.add('content_2');
+newContent.style.cssText ="border: 1px solid black; background-color: pink;"
+
+let newH1 = document.createElement('h1');
+newH1.textContent = 'I\'m a div';
+newContent.appendChild(newH1);
+
+let newPara = document.createElement('p');
+newPara.textContent = 'ME TOO';
+newContent.appendChild(newPara);
 
 container.appendChild(content);
+container.appendChild(newContent);
 
+// buttons is a node list. It looks and acts much like an array.
+const buttons = document.querySelectorAll('button');
+
+// we use the .forEach method to iterate through each button
+buttons.forEach((button) => {
+
+  // and for each one we add a 'click' listener
+  button.addEventListener('click', () => {
+    alert(button.id);
+  });
+});
   </script>
 </html>

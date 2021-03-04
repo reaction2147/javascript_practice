@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+
+let user = {} // Create an empty object for user
+    user.name = "John"; //add John 
+    user.surname= "Smith"; //add surname Smith
+    user.name = "Pete"; //Change name to Pete
+    delete user.name; //Delete name
+
+    let salaries = { // Object which is storing salaries
+  John: 100,
+  Ann: 160,
+  Pete: 130
+} 
+
+let sum=0;
+for (let key in salaries) {
+    sum += salaries[key];
+
+}
+alert(sum);
+
+
+       
+   </script> 
+</body>
+</html>

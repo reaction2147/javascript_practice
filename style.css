@@ -1,0 +1,17 @@
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+.dropdown-content a {
+    display: block;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.show {
+    display: block;
+}

@@ -5,13 +5,39 @@
 
 .dropdown-content a {
     display: block;
+    float: none;
+    padding-left: 7px;
+    background-color: #f9f9f9;
+    
 }
 
 .dropdown {
-    display: inline-block;
-    position: relative;
+    padding-left: 10px;
 }
 
 .show {
     display: block;
+}
+
+.navbar {
+    display: flex;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    color: black;
+}
+
+#homeMenu {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.dropbtn {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: inherit;
+    font-size: 16px;
 }
